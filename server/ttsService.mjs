@@ -59,7 +59,7 @@ async function synthesizeWithGeminiTTS(text, apiKey) {
           {
             parts: [
               {
-                text: `Speak this scam safety alert clearly, warmly, and at a natural pace:\n${text
+                text: text.replace(/\s+/g, ' ').trim().slice(0, 750),
                   .replace(/\s+/g, ' ')
                   .trim()
                   .slice(0, 750)}`,
