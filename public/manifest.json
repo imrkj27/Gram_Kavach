@@ -1,0 +1,72 @@
+{
+  "id": "/",
+  "name": "Gram Kawach — AI Scam & Fraud Guard",
+  "short_name": "Gram Kawach",
+  "description": "WhatsApp-style Multimodal AI Scam & Fraud Detector for Links, Screenshots, UPI QR, Text & Voice in Indian Languages.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "background_color": "#075E54",
+  "theme_color": "#075E54",
+  "categories": ["security", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Test Sample Scams",
+      "short_name": "Samples",
+      "description": "Try live UPI QR, SMS, and regional scam examples",
+      "url": "/?action=samples",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Scan Screenshot / QR",
+      "short_name": "Scan QR",
+      "description": "Open Gram Kawach ready to scan a QR code or screenshot",
+      "url": "/?action=scan",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
